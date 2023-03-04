@@ -128,11 +128,13 @@ header {
     height: 100vh;
 }
 
-.card {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    float: left;
+#mv {
+    height: 100vh;
+    width: auto;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width:920px) {

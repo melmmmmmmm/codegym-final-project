@@ -5,8 +5,10 @@
             <meta charset="utf-8">
             <meta name="viewport" content="initial-scale=1, width=device-width">
             <link href="../static/style.css" rel="stylesheet">
-            <script src="./../static/js/main.js"></script>
-            <title>Color Selector</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+Xm0a5inpjN0uod6wYYt18ByOQoBfB"
+                crossorigin="anonymous">
+            <title>Color Selected</title>
         </head>
         <body>
             <header>
@@ -26,18 +28,13 @@
             </header>
             <main>
                 <div id="mv">
-                    <form action="/" method="POST">
-                        <div class="select-box">
-                            <select id="color-select" onchange="showSelectedColor()">
-                                <option selected>選択してください</option>
-                                {% for color in colors %}
-                                    <option value="{{ color.color_code }}">{{ color.color_name }}</option>
-                                {% endfor %}
-                            </select>
-                            <div id="color-box"></div>
-                            <button type="submit">検索</button>
+                    <div class="container mt-3">
+                        <div class="card" style="background-color:{{ color_code }};">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">{{ color_name }}</h5>
+                            </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </main>
     </body>
