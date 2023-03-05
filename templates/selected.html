@@ -30,10 +30,8 @@
                 <div id="mv">
                     <div class="container mt-3">
                         {% for color in matches_colors %}
-                            <div class="card" style="background-color:{{ color.matching_color_code }};">
-                                <h2>{{ color.matching_color_name }}</h2>
-                                <p>{{ color.matching_color_code }}</p>
-                            </div>
+                            <div class="card" style="background-color: #{{ color.matching_color_code }};"></div>
+                            <h2>{{ color.matching_color_name }}</h2>
                         {% endfor%}
                     </div>
                 </div>
