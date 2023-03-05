@@ -129,7 +129,7 @@ header {
 }
 
 #mv {
-    height: 100vh;
+    height: 150vh;
     width: auto;
     background-color: rgb(220, 220, 220);
     display: flex;
