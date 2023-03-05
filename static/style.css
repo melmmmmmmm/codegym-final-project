@@ -137,6 +137,39 @@ header {
     align-items: center;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+
+.card-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-body {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.color-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff0000; /* ここにカラーコードを入力 */
+}
+
 @media screen and (min-width:920px) {
 
     #pcNav {

@@ -28,7 +28,7 @@
                 <div id="mv">
                     <form action="/" method="POST">
                         <div class="select-box">
-                            <select id="color-select" onchange="showSelectedColor()">
+                            <select name="selected_color_code" id="color-select" onchange="showSelectedColor()">
                                 <option selected>選択してください</option>
                                 {% for color in colors %}
                                     <option value="{{ color.color_code }}">{{ color.color_name }}</option>
