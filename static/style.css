@@ -212,16 +212,6 @@ header {
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
-.link {
-    font-size: 20px;
-    margin-top: 30px;
-}
-
-.link a {
-    color: #000;
-    font-size: 25px;
-}
-
 @media screen and (min-width:920px) {
 
     #pcNav {
