@@ -206,6 +206,7 @@ h2 {
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
     margin-top: 20px;
+    z-index: 99;
 }
 
 .btn span {
@@ -230,6 +231,17 @@ h2 {
 .btn:hover:after {
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.memox-image {
+    position: absolute;
+    bottom: -100px;
+    right: -130px;
+    z-index: 10;
+}
+.memox-image img {
+    width: 90%;
+    height: auto;
 }
 
 @media screen and (min-width:920px) {
