@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="../static/style.css" rel="stylesheet">
+        <script src="./../static/js/main.js"></script>
+        <title>Color Selector</title>
+    </head>
     <body>
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="initial-scale=1, width=device-width">
-            <link href="../static/style.css" rel="stylesheet">
-            <script src="./../static/js/main.js"></script>
-            <title>Color Selector</title>
-        </head>
-        <body>
-            <header>
-                <ul id="pcNav">
-                    <li><a href="">ホーム</a></li>
-                </ul>
-                <input id="checkbox" type="checkbox">
-                <label id="lineMenu" class="menu-check" for="checkbox">
-                <span></span><span></span>
-                <p>MENU</p>
-                </label>
-                <nav id="globalNav">
-                <ul>
-                    <li><a href="">ホーム</a></li>
-                </ul>
-                </nav>
-            </header>
-            <main>
-                <div id="mv">
-                    <form action="/" method="POST">
-                        <div class="select-box">
-                            <select name="selected_color_code" id="color-select" onchange="showSelectedColor()">
-                                <option selected>選択してください</option>
-                                {% for color in colors %}
-                                    <option value="{{ color.color_code }}">{{ color.color_name }}</option>
-                                {% endfor %}
-                            </select>
-                            <div id="color-box"></div>
-                            <button class="btn" type="submit">
-                                <span>検索</span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </main>
+        <header>
+            <ul id="pcNav">
+                <li><a href="">ホーム</a></li>
+            </ul>
+            <input id="checkbox" type="checkbox">
+            <label id="lineMenu" class="menu-check" for="checkbox">
+            <span></span><span></span>
+            <p>MENU</p>
+            </label>
+            <nav id="globalNav">
+            <ul>
+                <li><a href="">ホーム</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="mv">
+                <form action="/" method="POST">
+                    <div class="select-box s-box">
+                        <select name="selected_color_code" id="color-select" onchange="showSelectedColor()">
+                            <option selected disabled>選択してください</option>
+                            {% for color in colors %}
+                                <option value="{{ color.color_code }}">{{ color.color_name }}</option>
+                            {% endfor %}
+                        </select>
+                        <div id="color-box"></div>
+                        <button class="btn" type="submit">
+                            <span>検索</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
     </body>
 </html>

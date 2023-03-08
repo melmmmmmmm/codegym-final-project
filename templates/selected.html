@@ -28,11 +28,16 @@
             </header>
             <main>
                 <div id="mv">
-                    <div class="container mt-3">
-                        {% for color in matches_colors %}
-                            <div class="card" style="background-color: #{{ color.matching_color_code }};"></div>
-                            <h2>{{ color.matching_color_name }}</h2>
-                        {% endfor%}
+                    <div class="container">
+                        <div class="color-wrapper">
+                            {% for color in matches_colors %}
+                                <div class="card" style="background-color: #{{ color.matching_color_code }};">
+                                    <div class="card-content">
+                                        <h2>{{ color.matching_color_name }}</h2>
+                                    </div>
+                                </div>
+                            {% endfor%}
+                        </div>
                     </div>
                 </div>
             </main>
