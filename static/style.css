@@ -159,7 +159,7 @@ h2 {
     margin: 0;
     text-align: center;
     color: gray;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px white;
 }
 
 .container {
